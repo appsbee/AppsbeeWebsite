@@ -20,6 +20,7 @@ body {
 p {
     color: inherit;
     font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
 }
 
 h1,
@@ -99,6 +100,30 @@ a:hover {
     margin-top: 0;
 }
 
+.dropdown-menu {
+    border-radius: 0px;
+}
+
+.dropdown-menu li a {
+    display: block;
+    width: 100%;
+    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+    clear: both;
+    font-weight: 400;
+    color: var(--bs-dropdown-link-color);
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    border-radius: var(--bs-dropdown-item-border-radius,0);
+    font-size: 18px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #B82B2F;
+    color: #ccc;
+}
 /* End Of Navbar Section */
 
 
@@ -212,7 +237,6 @@ a:hover {
 
 .bg-custom-gradient {
     background-color: #B82B2F;
-    /* background-image: linear-gradient(135deg,#0149CC,rgba(0,198,255,0.749),#00C6FF); */
     box-shadow: 0 40px 80px hwb(0deg 41.1% 58.9% / 85%);
 }
 
@@ -436,3 +460,135 @@ a:hover {
 }
 
 /* End Of Footer Form Section */
+
+
+/* Footer Section */
+
+.address-links h3 {
+    color: #a6171c;
+}
+
+.address-links h5, p {
+    color: #000;
+}
+
+.footer-heading-links h3 {
+    color: #a6171c;
+    text-transform: uppercase;
+}
+
+.case-links li {
+    margin-bottom: 10px;
+}
+
+.case-links li a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.company-links li {
+    margin-bottom: 10px;
+}
+
+.company-links li a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.heading-link {
+    color: #a6171c;
+}
+
+/* End Of Footer Section */
+
+
+/* Telehealth Page */
+
+.banner-section {
+    position: relative;
+    width: 100%;
+    height: -webkit-fill-available;
+    align-items: center;
+    background: transparent;
+}
+
+.banner-content {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+}
+
+.banner-content h1 {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.title-content h1 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 600;
+    margin: 0;
+}
+
+.tele-sol-item h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.benefits-list {
+    list-style: circle outside;
+}
+
+.benefits-list li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.benefits-content p {
+    font-size: 18px;
+}
+
+
+/* End Of Telehealth Page */
+
+
+/* Responsive Media Query For Smartphones*/
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+
+    h1,
+    h2, 
+    h3 {
+        font-size: 18px !important;
+    }
+
+    .nav-link {
+        color: #000;
+        font-size: 16px;
+        padding: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .banner-text h4 {
+        font-size: 18px;
+        line-height: inherit;
+    }
+
+    .banner-text p {
+        font-size: 20px;
+    }
+
+    .banner-content {
+        display: none;
+    }
+}
