@@ -501,7 +501,55 @@ a:hover {
     color: #a6171c;
 }
 
+footer {
+    background: rgb(230, 207, 207);
+    border-top: 6px solid #a6171c;
+    border-bottom: 6px solid #a6171c;
+}
 /* End Of Footer Section */
+
+
+/* go to top button */
+
+.go-top {
+	position: fixed;
+	top: 60%;
+	right: 3%;
+	opacity: 0;
+	cursor: pointer;
+	text-decoration: none;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	background: #a6171c;
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	line-height: 48px;
+	z-index: 100;
+	-webkit-transition: .5s;
+	transition: .5s
+}
+
+.go-top i {
+	-webkit-transition: .5s;
+	transition: .5s
+}
+
+.go-top:hover {
+	background-color: #000;
+}
+
+.go-top.active {
+	top: 95%;
+	-webkit-transform: translateY(-95%);
+	transform: translateY(-95%);
+	opacity: 1;
+	visibility: visible
+}
+
+/* end of go to top button */
 
 
 /* Telehealth Page */
@@ -524,7 +572,7 @@ a:hover {
 .banner-content h1 {
     color: #fff;
     margin-top: 10px;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 300;
     margin-bottom: 10px;
 }

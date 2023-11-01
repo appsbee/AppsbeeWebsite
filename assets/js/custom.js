@@ -88,3 +88,32 @@ $('.owl-test').owlCarousel({
         }
     }
 })
+
+
+//Navbar fixed scroll
+
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 50) {
+        $('.navbar').addClass('fixed-top bg-white bg-opacity-75 shadow-lg');
+    } else {
+        $('.navbar').removeClass('fixed-top bg-white bg-opacity-75 shadow-lg');
+    }
+});
+
+//scroll to top
+
+(function ($) {
+
+    $('body').append("<div class='go-top'><i class='fa-solid fa-circle-chevron-up'></i></div>");
+    $(window).on('scroll', function() {
+        var scrolled = $(window).scrollTop();
+        if (scrolled > 600) $('.go-top').addClass('active');
+        if (scrolled < 600) $('.go-top').removeClass('active');
+    });
+    $('.go-top').on('click', function() {
+        $('html, body').animate({
+            scrollTop: '0',
+        }, 50);
+    });
+
+})(jQuery);
