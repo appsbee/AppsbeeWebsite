@@ -32,7 +32,7 @@
           <div class="collapse navbar-collapse" id="navbarsExample05">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false">Solutions</a>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Solutions</a>
                 <ul class="dropdown-menu">
                    <li><a href="telehealth-utah.html">Tele-health</a></li>
                    <li><a href="logistics-solutions-utah.html">Logistics/deliver network</a></li>
@@ -51,7 +51,7 @@
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Technology</a>
+                <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false">Technology</a>
                 <ul class="dropdown-menu">
                     <li><a href="software-development-utah.html">Software Product Development</a></li>
                     <li><a href="machine-learning-utah.html">Machine Learning</a></li>
@@ -63,10 +63,10 @@
               </li>
 
               <li>
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
             </ul>
-            <a href="#" class="btn btn-danger rounded-pill text-uppercase bg-red text-white" role="button" aria-disabled="true">Have A PROJECT TO DISCUSS?</a>
+            <a href="#" class="btn btn-danger rounded-pill text-uppercase bg-red text-white" data-bs-toggle="modal" data-bs-target="#formModal">Have A PROJECT TO DISCUSS?</a>
           </div>
         </div>
       </nav>
@@ -85,7 +85,7 @@
                 <h1>SWIFT AND FLAT FILE DATABASES.</h1>
                 <h1>EXPLORE OUR TECHNOLOGY!</h1>
                 <!-- <h1>MOBILE SOLUTIONS FOR YOU</h1> -->
-                <a href="#" type="button" class="btn btn-outline-light mt-4 px-4 rounded-pill fw-medium text-uppercase d-lg-inline-block d-none">Start Discussion</a>
+                <a href="#" type="button" class="btn btn-outline-light mt-4 px-4 rounded-pill fw-medium text-uppercase d-lg-inline-block d-none" data-bs-toggle="modal" data-bs-target="#formModal">Start Discussion</a>
             </div>
         </div>
     </div>
@@ -117,23 +117,113 @@
             <div class="row my-5">
                 <div class="col-lg-6 col-md-12 col-12">
                     <div class="tele-sol-item my-4 text-center">
-                        <img src="assets/icons/Vulnerability-Assessment-through-Penetration-Testing.png" alt="">
-                        <h3>Vulnerability Assessment through Penetration Testing</h3>
-                        <p>We identify what is vulnerable and prone to malpractices in your business and ensure high security of those vulnerable areas. We detect those vulnerabilities with penetration testing.</p>
+                        <img src="assets/icons/Oracle-DB.png" alt="">
+                        <h3>Oracle DB</h3>
+                        <p>This multi-model DBMS is highly advanced and is noted for its numerous features</p>
+                        <ul class="benefits-list my-2 text-start">
+                            <li>High-class infrastructure</li>
+                            <li>Advanced instance tuning</li>
+                            <li>Optimized configuration</li>
+                            <li>Automatic Database Diagnostic Monitor (ADDM)</li>
+                            <li>Automatic Storage Management (ASM)</li>
+                            <li>Assists in Data Warehousing (DW)</li>
+                            <li>Runs Online Transaction Processing (OLTP)</li>
+                            <li>Good for development and testing processes</li>
+                            <li>Usage of Oracle Exadata for Oracle Database deployment, etc.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-12">
                     <div class="tele-sol-item my-4 text-center">
-                        <img src="assets/icons/Socia_Engineering_Test.png" alt="">
-                        <h3>Social Engineering Test</h3>
-                        <p>Examining employees’ commitment and making them aware of security policies is what we do through the social engineering test. Employees should not get manipulated by malicious sources and leak confidential information.</p>
+                        <img src="assets/icons/PostgreSQL-DB.png" alt="">
+                        <h3>PostgreSQL DB</h3>
+                        <p>This is an open source relational database management system.Flexibility along with some great features makes PostgreSQL an excellent option.</p>
+                        <ul class="benefits-list my-2 text-start">
+                            <li>Extremely versatile and runs on a variety of platforms like Windows, Mac OS X, UNIX and Linux</li>
+                            <li>Supports text, pictures, audio, and video</li>
+                            <li>Sophisticated locking</li>
+                            <li>Multi-version concurrency control (MVCC)</li>
+                            <li>Includes programming interfaces for C / C++, Java,Python, Ruby, etc.</li>
+                            <li>Supports multiple schemas per database</li>
+                            <li>Supports both single and multiple inheritance</li>
+                            <li>Foreign key referential integrity, etc.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-12">
                     <div class="tele-sol-item my-4 text-center">
-                        <img src="assets/icons/Compliance_Assessment.png" alt="">
-                        <h3>Compliance Assessment</h3>
-                        <p>We identify various factors of business like employee actions,business activities, position, size, etc., and make sure they are complaint with company’s security policies. The product being developed should comply with the specified requirements, including the security requirement. Compliance assessment helps to identify areas of potential risks.</p>
+                        <img src="assets/icons/Mongo-DB.png" alt="">
+                        <h3>Mongo DB</h3>
+                        <p>This NOSQL database that uses BSON format is a user-friendly DBMS with a number of cool features</p>
+                        <ul class="benefits-list my-2 text-start">
+                            <li>No schema </li>
+                            <li>Flexible indexing</li>
+                            <li>Impressively high speeds</li>
+                            <li>Uncomplicated structures</li>
+                            <li>Horizontal Scalability Assistance</li>
+                            <li>Ad Hoc Query Support,etc.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="tele-sol-item my-4 text-center">
+                        <img src="assets/icons/MySQL-DB,-Aurora-DB,-Percona-db.png" alt="">
+                        <h3>MySQL DB / Aurora DB / Percona db</h3>
+                        <p>Considered to be the most popular RDBMS, MySQL is known for its simplicity and large scale applications. This is a core component of LAMP and has innumerable features.</p>
+                        <ul class="benefits-list my-2 text-start">
+                            <li>Can handle large scale productions</li>
+                            <li>Super-fast, performance</li>
+                            <li>Easy to understand and use</li>
+                            <li>Multi-threaded</li>
+                            <li>Supports cross-platform</li>
+                            <li>SSL Support</li>
+                            <li>Unicode Support</li>
+                            <li>Full text indexing</li>
+                            <li>Built-in replication support and multi-master replication support</li>
+                            <li>Query Catching</li>
+                            <li>Ease of use in Shell for creating tables, querying tables, etc.</li>
+                            <li>Ease of use with Java JDBC, etc.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="tele-sol-item my-4 text-center">
+                        <img src="assets/icons/Java.png" alt="">
+                        <h3>Java</h3>
+                        <p>This object-oriented language is the most popular programming language and is inevitable for coding. Compiling programs into bytecode on Java Virtual Machine(JVM) makes Java machine-independent. Java forms the backbone of most of the web and mobile applications today.</p>
+                        <p>Why should we use Java?</p>
+                        <ul class="benefits-list my-2 text-start">
+                            <li>Ease of writing, compilation and debugging</li>
+                            <li>Reusable codes</li>
+                            <li>Java programs run on Multiplatform</li>
+                            <li>Lesser complexity in creation of exceptions using Java Source Code</li>
+                            <li>Platform-independent</li>
+                            <li>Supports cross-platform</li>
+                            <li>Enhanced security</li>
+                            <li>Uses advanced development tools like Eclipse SDK</li>
+                            <li>Multithreaded I nature</li>
+                            <li>Makes framework robust and reliable</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="tele-sol-item my-4 text-center">
+                        <img src="assets/icons/PHP.png" alt="">
+                        <h3>PHP</h3>
+                        <p>This open source scripting language is substantial, wide-ranged and has a handful of advantages to enable seamless codification for the development of the products.</p>
+                        <p>Why PHP</p>
+                        <ul class="benefits-list my-2 text-start">
+                            <li>Absolute development for LAMP(Linux,Apache,MySQL, PHP) stack</li>
+                            <li>Development and optimization of MySQL RDBMS</li>
+                            <li>Advanced web server architecture design, setup and configuration </li>
+                            <li>Fine tuning</li>
+                            <li>Well designed, PHP applications for Individual Application Layers</li>
+                            <li>Open architecture with increased support and maintenance allowing businesses to witness growth in future</li>
+                            <li>Extremely High security of sensitive business data and transactions</li>
+                            <li>Impressive load resistance and scalability using appropriate protocols like Fast CGI</li>
+                            <li>Enriched user interface</li>
+                            <li>Well-versed code</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -143,21 +233,63 @@
     <!-- End of Benefits From Solution Section -->
 
 
+    <!-- Benefits From Solution Section -->
 
+    <section class="tele-sol my-5">
+        <div class="container">
+            <h2 class="text-start text-capitalize position-relative d-inline-block decoration-line">The Way We Develop The Product</h2>
+            <p class="mt-4">We’ve got the product sanctioned with a ‘thumbs up’ and ‘all perfect’ tag after developing the product thoroughly throughout the stages of Software Development Life Cycle (SDLC).</p>
+            <div class="row my-5">
+                <div class="col-lg-3 col-md-12 col-12 px-0">
+                    <img src="assets/images/info-1.png" class="w-100 img-fluid" alt="">
+                </div>
+                <div class="col-lg-3 col-md-12 col-12 px-0">
+                    <div class="padding-box">
+                        <h3 class="brd-1">Planning Out the Process</h3>
+                        <p>We create an outline of what exactly needs to be created according to the client’s requirements (requirement analysis), how the product has to be created, what will be the estimated budget, etc. </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-12 px-0">
+                    <div class="padding-box">
+                        <h3 class="brd-1">Building</h3>
+                        <p>The building phase witnesses the actualization of the product concept where the product is actually built and developed using the right technology.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-12 px-0">
+                    <div class="padding-box">
+                        <h3 class="brd-1">Testing</h3>
+                        <p>The developed product is tested and if any bug is found, it gets instantly fixed. We aim at providing an error-free product at the end of testing phase.</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-12 px-0">
+                    <img src="assets/images/info-mid.png" class="w-100 img-fluid" alt="">
+                </div>
+                <div class="col-lg-3 col-md-12 col-12 px-0">
+                    <div class="padding-box">
+                        <h3 class="brd-1">Defining Strategies</h3>
+                        <p>We give a shape to the development plan by defining appropriate strategies in a concrete form such as documentation and get the plan approved by the customer.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-12 px-0">
+                    <div class="padding-box">
+                        <h3 class="brd-1">Designing</h3>
+                        <p>Here, we decide on the product architecture. There can be multiple design approaches before the actual design is finalized. We also confirm the technology, hardware, software, etc. which we will employ in the development process.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-12 px-0">
+                    <div class="padding-box">
+                        <h3 class="brd-1">Deployment</h3>
+                        <p>Once the product is tested and is approved to be bug-free after various kinds of testing like sanity, alpha, beta, performance, regression and UAT, the product is safe to be released in the market with ‘all ok’ tag.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-12 px-0">
+                    <img src="assets/images/info-last.png" class="w-100 img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- End of Benefits From Solution Section -->
 
 
     <!-- Footer Section -->
@@ -212,6 +344,51 @@
           <img class="w-auto me-3" src="assets/images/apps_img-footer.png"> 2009 - 2023 Appsbee. All Rights Reserved.
         </div>
       </div>
+
+       <!-- Form Modal -->
+
+       <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content form-modal-bg py-3">
+            <div class="modal-header">
+                <h4 class="cont-new text-center">Contact Appsbee</h4>
+              <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body top-footer-section py-0">
+                <form id="footerForm" action="#" method="GET" enctype="multipart/form-data">
+                    <div class="container">
+                      <div class="row p-4">
+                        <div class="col-12">
+                          <div class="row-part">
+                            <input type="text" name="name" placeholder="Your Name:" class="w-100" required="required">
+                          </div>
+                          <div class="row-part">
+                            <input type="email" name="email" placeholder="Email:" class="w-100" required="required">
+                          </div>
+                          <div class="row-part">
+                            <input type="text" name="phone" placeholder="Phone:" class="w-100" required="required">
+                          </div>
+                          <div class="row-part">
+                            <input type="text" name="subject" placeholder="Subject:" class="w-100" required="required">
+                          </div>
+                          <div class="row-part">
+                            <textarea class="txt-area-bot w-100" name="requirement"  placeholder="Tell Us About Your Requirement:" required="required"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clear"></div>
+                      <div class="col-12 text-center">
+                        <button class="btn_n3 w-50 mb-3" type="submit">Let's Connect</button>
+                      </div>
+                    </div>
+                  </form>
+            </div>
+            <div class="modal-footer border-top">
+          </div>
+        </div>
+      </div>
+
+      <!-- End Of Form Modal -->
   
       <!--  Optional JavaScript -->
       <script src="assets/js/jquery-3.6.3.min.js"></script>

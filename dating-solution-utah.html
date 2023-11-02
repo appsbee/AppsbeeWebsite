@@ -63,10 +63,10 @@
               </li>
 
               <li>
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
             </ul>
-            <a href="#" class="btn btn-danger rounded-pill text-uppercase bg-red text-white" role="button" aria-disabled="true">Have A PROJECT TO DISCUSS?</a>
+            <a href="#" class="btn btn-danger rounded-pill text-uppercase bg-red text-white" data-bs-toggle="modal" data-bs-target="#formModal">Have A PROJECT TO DISCUSS?</a>
           </div>
         </div>
       </nav>
@@ -84,7 +84,7 @@
                 <h1>AND MOBILE DATING APPLICATION</h1>
                 <h1>FOR YOU TO START YOUR DATING BUSINESS.</h1>
                 <!-- <h1>MOBILE SOLUTIONS FOR YOU</h1> -->
-                <a href="#" type="button" class="btn btn-outline-light mt-4 px-4 rounded-pill fw-medium text-uppercase d-lg-inline-block d-none">Start Discussion</a>
+                <a href="#" type="button" class="btn btn-outline-light mt-4 px-4 rounded-pill fw-medium text-uppercase d-lg-inline-block d-none" data-bs-toggle="modal" data-bs-target="#formModal">Start Discussion</a>
             </div>
         </div>
     </div>
@@ -213,6 +213,51 @@
           <img class="w-auto me-3" src="assets/images/apps_img-footer.png"> 2009 - 2023 Appsbee. All Rights Reserved.
         </div>
       </div>
+
+       <!-- Form Modal -->
+
+       <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content form-modal-bg py-3">
+            <div class="modal-header">
+                <h4 class="cont-new text-center">Contact Appsbee</h4>
+              <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body top-footer-section py-0">
+                <form id="footerForm" action="#" method="GET" enctype="multipart/form-data">
+                    <div class="container">
+                      <div class="row p-4">
+                        <div class="col-12">
+                          <div class="row-part">
+                            <input type="text" name="name" placeholder="Your Name:" class="w-100" required="required">
+                          </div>
+                          <div class="row-part">
+                            <input type="email" name="email" placeholder="Email:" class="w-100" required="required">
+                          </div>
+                          <div class="row-part">
+                            <input type="text" name="phone" placeholder="Phone:" class="w-100" required="required">
+                          </div>
+                          <div class="row-part">
+                            <input type="text" name="subject" placeholder="Subject:" class="w-100" required="required">
+                          </div>
+                          <div class="row-part">
+                            <textarea class="txt-area-bot w-100" name="requirement"  placeholder="Tell Us About Your Requirement:" required="required"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clear"></div>
+                      <div class="col-12 text-center">
+                        <button class="btn_n3 w-50 mb-3" type="submit">Let's Connect</button>
+                      </div>
+                    </div>
+                  </form>
+            </div>
+            <div class="modal-footer border-top">
+          </div>
+        </div>
+      </div>
+
+      <!-- End Of Form Modal -->
   
       <!--  Optional JavaScript -->
       <script src="assets/js/jquery-3.6.3.min.js"></script>

@@ -502,7 +502,12 @@ a:hover {
 }
 
 footer {
-    background: rgb(230, 207, 207);
+    background: #e6cfcf;
+    background-image: url(../images/banner/footer_banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-top: 6px solid #a6171c;
     border-bottom: 6px solid #a6171c;
 }
@@ -603,6 +608,50 @@ footer {
 
 
 /* End Of Telehealth Page */
+
+
+/* Software Pages */
+
+.padding-box {
+    padding: 0 15px;
+}
+
+.padding-box h3 {
+    margin-top: 40px !important;
+    display: block;
+    padding-bottom: 0 !important;
+    min-height: auto !important;
+    padding: 0px 0 0px 15px !important;
+    margin-bottom: 20px !important;
+}
+
+.brd-1 {
+    border-left: 8px solid #c8c173;
+}
+
+/* End Of Software Pages */
+
+
+/* Form Modal Css */
+
+.form-modal-bg {
+    background-color: #a6171c;
+    background-image: linear-gradient(135deg,#a6171c,#d84e51);
+    padding: 25px 0;
+}
+
+.cont-new {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* End Of Form Modal Css */
 
 
 /* Responsive Media Query For Smartphones*/
