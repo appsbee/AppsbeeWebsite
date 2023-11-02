@@ -647,11 +647,147 @@ footer {
     text-transform: uppercase;
 }
 
-
-
-
-
 /* End Of Form Modal Css */
+
+/* Other Styles */
+
+.an-team-single {
+    position: relative;
+    width: 100%;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.an-team-single .image-container {
+    position: relative;
+}
+
+.an-team-single img {
+    width: 100%;
+    display: block;
+}
+
+.an-team-single .image-container .overlay {
+    background: #a6171c8e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.overlay, .an-team-single .image-container .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.an-team-single:hover .image-container .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.small-social li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.an-team-single .user-details {
+    padding: 15px;
+    background: #a6171c;
+}
+
+.an-team-single .user-details h4 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.an-team-single .user-details p {
+    margin: 0;
+    color: #FFF;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.list-inline > li, .small-social > li, .an-bordered-list > li, .an-footer-category-list > li, .an-social-icons > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.an-blog-single {
+    position: relative;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.an-blog-single .blog-image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.an-blog-container.content-bg-primary .an-blog-single .details {
+    background-color: #a6171c;
+    background-image: linear-gradient(135deg,#a6171c,#d84e51);
+    padding: 15px;
+}
+
+
+.an-blog-single h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.an-blog-single h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.blog-meta p {
+    color: #fff;
+}
+
+
+.an-blog-single .blog-image-container .overlay {
+    padding: 15px;
+    background: #a6171c8e;
+    display: flex;
+    transition: all 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.an-blog-single .blog-image-container .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.an-blog-single:hover .blog-image-container .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* End Of Other Styles */
 
 
 /* Responsive Media Query For Smartphones*/
