@@ -903,6 +903,10 @@ footer {
         text-transform: uppercase;
     }
 
+    .banner-section img {
+        height: 106px;
+    }
+
     .banner-text h4 {
         font-size: 18px;
         line-height: inherit;
@@ -913,6 +917,17 @@ footer {
     }
 
     .banner-content {
-        display: none;
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        top: -60%;
+    }
+
+    .banner-content h1 {
+        font-size: 11px !important;
+    }
+
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+        color: #B82B2F;
     }
 }
